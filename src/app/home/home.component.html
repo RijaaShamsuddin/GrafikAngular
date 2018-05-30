@@ -1,0 +1,702 @@
+<!--<div class="col-md-6 col-md-offset-3">
+  <h1>Home</h1>
+  <p>You're logged in with JWT!!</p>
+  <div>
+      Users from secure api end point:
+      &lt;!&ndash; <ul>
+          <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+      </ul> &ndash;&gt;
+  </div>
+  <p><a [routerLink]="['/login']">Logout</a></p>
+</div>-->
+
+<p>
+  home works!
+</p>
+
+<div class="main-container">
+  <section class="cover imagebg height-60 text-center" data-overlay="3">
+    <div class="background-image-holder">
+      <img alt="background" src="img/banner.png" />
+    </div>
+    <div class="container pos-vertical-center">
+      <div class="row" style="position: relative;">
+        <div class="col-md-10 col-lg-8">
+          <h1 class="maintop" style="font-weight: bolder;font-size: 42px;text-shadow: 1px 6px 10px black;">Dein Marktplatz für Kreativität</h1>
+          <form class="form--horizontal row m-0 ml-5" style="max-width: inherit;">
+            <div class="col-md-11 input1 box-relative">
+              <input type="text" name="search" class="large" style="height: 52px;" placeholder="suchanfrage eingeben und bestätigen" />
+              <input type="text" name="search" class="small" style="height: 52px; margin-top: auto;" placeholder="suchen..." />
+              <button type="" class="hidd-btn child-box-btn-relative" style="height: auto">
+
+                <img alt="Image " src="img/search.png" class="grafix">
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <section style="background: white;" >
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 col-lg-8 text-center">
+          <h2 >
+            Bist Du auf der Suche nach der perfekten Grafik, dem idealen Logo, einem Flyer oder einer Homepage?
+          </h2>
+          <p class="lead" style="font-size: 1rem">
+            Unser Marktplatz für Kreativität bietet Dir zu fairen Preisen einen qualitativ hochwertigen Service.
+          </p>
+          <br>
+        </div>
+      </div>
+      <!--end of row-->
+      <div class="row text-center">
+        <div class="col-md-3" style="cursor: pointer;">
+          <a  class="block">
+            <div class="feature boxed boxed--border border--round bg--white forum grafikitem" id="sli1">
+              <div class="men1" style="height: 143px;">
+                <img alt="Image" src="img/grafikicon2.png" class="grafix ">
+                <span class="h5 color--primary ">Grafikdesign</span>
+              </div>
+
+              <ul class="menu-vertical" style="display: none;" id="menn1">
+                <span class="h5" style="color: lightgray" >Grafikdesign</span>
+                <li>
+                  <a style="color: lightgray;text-decoration: none;">Flyer Design</a>
+                </li>
+                <li>
+                  <a style="color: lightgray;text-decoration: none;">Logo Design</a>
+                </li>
+                <li>
+                  <a style="color: lightgray;text-decoration: none;">Corporate Design</a>
+                </li>
+                <li>
+                  <a style="color: lightgray;text-decoration: none;">Show all</a>
+                </li>
+              </ul>
+
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3" style="cursor: pointer">
+          <a class="block">
+            <div class="feature boxed boxed--border border--round bg--white forum grafikitem" id="sli2">
+              <div class="men2" style="height: 143px">
+                <img alt="Image" src="img/LogoIcons4.png" class="grafix">
+                <span class="h5 color--primary" >WebDesign</span>
+              </div>
+
+              <ul class="menu-vertical" style="display: none;" id="menn2">
+                <span class="h5" style="color: lightgray" >WebDesign</span>
+
+                <li>
+                  <a style="color: lightgray;text-decoration: none;">CMS</a>
+                </li>
+                <li>
+                  <a style="color: lightgray;text-decoration: none;">E-Commerce</a>
+                </li>
+                <li>
+                  <a style="color: lightgray;text-decoration: none;">Custom Design</a>
+                </li>
+                <li>
+                  <a style="color: lightgray;text-decoration: none;">Show all</a>
+                </li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3" style="cursor: pointer">
+          <a  class="block">
+            <div class="feature boxed boxed--border border--round bg--white forum grafikitem" id="sli">
+              <div class="men" style="height: 143px">
+                <img alt="Image" src="img/LogoIcons3.png" class="grafix">
+                <span class="h5 color--primary" >Video & 3D</span>
+              </div>
+
+              <ul class="menu-vertical" style="display: none;" id="menn">
+                <span class="h5 " style="color: lightgray" >Video & 3D</span>
+                <li>
+                  <a style="color: lightgray;text-decoration: none;">Create</a>
+                </li>
+                <li>
+                  <a style="color: lightgray;text-decoration: none;">Manage</a>
+                </li>
+                <li>
+                  <a style="color: lightgray;text-decoration: none;">Share</a>
+                </li>
+                <li>
+                  <a style="color: lightgray;text-decoration: none;">Show all</a>
+                </li>
+              </ul>
+
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3" style="cursor: pointer">
+          <a class="block">
+            <div class="feature boxed boxed--border border--round bg--white grafikitem">
+              <div style="height: 143px">
+                <img alt="Image" src="img/blocks.png" class="grafix">
+
+                <span class="h5 color--primary">Weitere Kategorien</span>
+              </div>
+
+
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--end of container-->
+  </section>
+  <section style="background: #3C4252;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="margin-top: 100px;margin-bottom: 39px;">
+          <h2 class="text-center" style="color: white;">Bestseller</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="slider" data-paging="true">
+            <ul class="slides">
+              <li class="col-md-4 col-12 col-xs-12">
+                <div class="product">
+                  <div class="card card-1 boxed boxed--sm boxed--border ">
+                    <a href="#" style="text-decoration: none">
+                      <div class="card__body">
+
+                        <img src="img/inner-5.jpg" alt="Image" class="border--round">
+
+                        <p style="font-size: 15px;font-weight: 600;">
+                          Flyer double sided with source files
+                          Flyer double sided with source files
+                        </p>
+                      </div>
+                    </a>
+                    <div class="card__bottom">
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <div class="card__action">
+                            <a style="cursor: pointer">
+                              <i class="material-icons heartline" >favorite_border</i>
+                              <i class="material-icons heartfull" style="display: none; color: red" >favorite</i>
+                              <span style="color: black;">(6)</span>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="list-inline-item">
+                          <div class="card__action">
+                            <a href="#">
+                              <i class="material-icons">star</i>
+                              <i class="material-icons" >star</i>
+                              <i class="material-icons" >star</i>
+                              <i class="material-icons" >star</i>
+                              <i class="material-icons" >star</i>
+                              <span style="color: black;">4.2 (52)</span>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+
+                        </li>
+                        <li class="list-inline-item">
+                          <div class="card__action">
+                            <a href="#">
+                              <span style="color: black;">11,34 €</span>
+                            </a>
+                          </div>
+                        </li>
+
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-4 col-12 col-xs-12">
+                <div class="product">
+                  <div class="card card-1 boxed boxed--sm boxed--border ">
+                    <a href="#" style="text-decoration: none">
+                      <div class="card__body">
+
+                        <img src="img/inner-5.jpg" alt="Image" class="border--round">
+
+                        <p style="font-size: 15px;font-weight: 600;">
+                          Flyer double sided with source files
+                          Flyer double sided with source files
+                        </p>
+                      </div>
+                    </a>
+                    <div class="card__bottom">
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <div class="card__action">
+                            <a style="cursor: pointer">
+                              <i class="material-icons heartline" >favorite_border</i>
+                              <i class="material-icons heartfull" style="display: none; color: red" >favorite</i>
+                              <span style="color: black;">(6)</span>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="list-inline-item">
+                          <div class="card__action">
+                            <a href="#">
+                              <i class="material-icons">star</i>
+                              <i class="material-icons" >star</i>
+                              <i class="material-icons" >star</i>
+                              <i class="material-icons" >star</i>
+                              <i class="material-icons" >star</i>
+                              <span style="color: black;">4.2 (52)</span>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+
+                        </li>
+                        <li class="list-inline-item">
+                          <div class="card__action">
+                            <a href="#">
+                              <span style="color: black;">11,34 €</span>
+                            </a>
+                          </div>
+                        </li>
+
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-4 col-12 col-xs-12">
+                <div class="product">
+                  <div class="card card-1 boxed boxed--sm boxed--border ">
+                    <a href="#" style="text-decoration: none">
+                      <div class="card__body">
+
+                        <img src="img/inner-5.jpg" alt="Image" class="border--round">
+
+                        <p style="font-size: 15px;font-weight: 600;">
+                          Flyer double sided with source files
+                          Flyer double sided with source files
+                        </p>
+                      </div>
+                    </a>
+                    <div class="card__bottom">
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <div class="card__action">
+                            <a style="cursor: pointer">
+                              <i class="material-icons heartline" >favorite_border</i>
+                              <i class="material-icons heartfull" style="display: none; color: red" >favorite</i>
+                              <span style="color: black;">(6)</span>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="list-inline-item">
+                          <div class="card__action">
+                            <a href="#">
+                              <i class="material-icons">star</i>
+                              <i class="material-icons" >star</i>
+                              <i class="material-icons" >star</i>
+                              <i class="material-icons" >star</i>
+                              <i class="material-icons" >star</i>
+                              <span style="color: black;">4.2 (52)</span>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+
+                        </li>
+                        <li class="list-inline-item">
+                          <div class="card__action">
+                            <a href="#">
+                              <span style="color: black;">11,34 €</span>
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-4 col-12 col-xs-12">
+                <div class="product">
+                  <div class="card card-1 boxed boxed--sm boxed--border ">
+                    <a href="#" style="text-decoration: none">
+                      <div class="card__body">
+
+                        <img src="img/inner-5.jpg" alt="Image" class="border--round">
+
+                        <p style="font-size: 15px;font-weight: 600;">
+                          Flyer double sided with source files
+                          Flyer double sided with source files
+                        </p>
+                      </div>
+                    </a>
+                    <div class="card__bottom">
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <div class="card__action">
+                            <a style="cursor: pointer">
+                              <i class="material-icons heartline" >favorite_border</i>
+                              <i class="material-icons heartfull" style="display: none; color: red" >favorite</i>
+                              <span style="color: black;">(6)</span>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="list-inline-item">
+                          <div class="card__action">
+                            <a href="#">
+                              <i class="material-icons">star</i>
+                              <i class="material-icons" >star</i>
+                              <i class="material-icons" >star</i>
+                              <i class="material-icons" >star</i>
+                              <i class="material-icons" >star</i>
+                              <span style="color: black;">4.2 (52)</span>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+
+                        </li>
+                        <li class="list-inline-item">
+                          <div class="card__action">
+                            <a href="#">
+                              <span style="color: black;">11,34 €</span>
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end of col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <section class="cover imagebg height-200 text-center" data-gradient-bg="#4a90e2,#4876bd,#5888c1,#2464af">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-lg-7">
+          <h2>
+            Kaufe unsere Gold-Pakete und profitiere von etlichen Vorteilen!
+          </h2>
+          <p class="lead">
+            Wähle zwischen den Bronze-, Silber oder Gold-Paket individuell
+            aus und profitiere von unterschiedlichen Vorteilen. Welchen Service
+            Du brauchst, entscheidest auch nur Du.
+          </p>
+          <br>
+        </div>
+      </div>
+      <!--end of row-->
+      <div class="row text-center mt-5">
+
+        <div class="col-md-4 masonry__item">
+          <div class="card card-2 text-center" style="background: white;">
+            <div class="card__top project-thumb">
+              <span class="label"><i class="icon icon--xs  icon-Dropbox" icon-class=" icon-Dropbox" title="icon-Dropbox"></i> Paket</span>
+              <a href="#">
+                <img alt="Image" src="img/landing-14.jpg">
+              </a>
+            </div>
+            <a href="#">
+              <div class="card__body">
+
+                <p style="color: #4a90e2;font-size: 15px;font-weight: 600;text-align: left;margin-top: -20px;">Coffee NewYork
+                </p>
+
+                <div class="row card__action" style="margin-top: 0; text-align: left">
+                  <div class="col-md-12">
+                    <div class="col-md-3 col-sm-3 heartitem no-padd">
+                      <a href="#">
+                        <i class="material-icons heartline pointer set-pos">favorite_border</i>
+                        <i class="material-icons heartfull set-pos" style="color: red; display: none;">favorite</i>
+                        <span class="set-font-style">(6)</span>
+                      </a>
+                    </div>
+                    <div class="">
+                      <a href="#">
+                        <i class="material-icons" style="font-size: 14px;" >star</i>
+                        <i class="material-icons" style="font-size: 14px;">star</i>
+                        <i class="material-icons" style="font-size: 14px;">star</i>
+                        <i class="material-icons" style="font-size: 14px;">star</i>
+                        <i class="material-icons" style="font-size: 14px;">star</i>
+                        <span style="color: black;font-size: 13px;font-weight: bold;">4.2 (52)</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <p style="color: black;text-align: left;">Small plates, salads & sandwiches in an intimate setting with 12 indoor seats plus patio seating.</p>
+
+
+
+
+              </div>
+            </a>
+
+            <hr style="border: 1px solid #ECECEC;margin-top: -5px;">
+
+            <div class="row card__action" style="padding-bottom: 18px;">
+              <a href="">
+                <div class="col-md-12 col-xs-12">
+                  <p class="h6 type--uppercase text-left" style="color: black; margin-left: 28px; margin-right: 28px; text-transform:none;">Wähle dein Paket zwischen Bronze, Silber und Gold aus.</p>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="row ml-3 mr-3" style="margin-top: 0;">
+
+              <div class="col-md-4 col-xs-4 text-center" style="font-size: 17px">
+                <a href="#">
+                  <img src="img/gold.png" class="shape" alt="Image"  style="width: 50%;">
+                  <p class="avail" style="color: #919191;;margin-top: 13px;font-size: 16px;">100,-€</p>
+                </a>
+
+              </div>
+              <div class="col-md-4 col-xs-4 text-center" style="font-size: 17px">
+                <a href="#">
+                  <img src="img/silber.png" class="shape" alt="Image"  style="width: 50%;">
+                  <p class="avail" style="color: #919191;;margin-top: 13px;font-size: 16px;">150,-€</p>
+                </a>
+
+              </div>
+              <div class="col-md-4 col-xs-4 text-center" style="font-size: 17px">
+                <a href="#">
+                  <img src="img/bronze.png" class="shape" alt="Image"  style="width: 50%;">
+                  <p class="avail" style="color: #919191;;margin-top: 13px;font-size: 16px;">200,-€</p>
+                </a>
+
+              </div>
+
+            </div>
+
+
+
+            <div style="padding-bottom: 30px;padding-top: 30px;">
+              <a href="#">
+                <!--<span class="h6 type&#45;&#45;uppercase" style="color:black;">Buy Now</span>-->
+                <a class="btn btn--primary btn--lg" href="#" style="width: 85%;">
+                  <span class="btn__text">JETZT KAUFEN</span>
+                </a>
+
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4 masonry__item">
+          <div class="card card-2 text-center" style="background: white;">
+            <div class="card__top project-thumb">
+              <span class="label"><i class="icon icon--xs  icon-Dropbox" icon-class=" icon-Dropbox" title="icon-Dropbox"></i> Paket</span>
+              <a href="#">
+                <img alt="Image" src="img/landing-14.jpg">
+              </a>
+            </div>
+            <a href="#">
+              <div class="card__body">
+
+                <p style="color: #4a90e2;font-size: 15px;font-weight: 600;text-align: left;margin-top: -20px;">Coffee NewYork
+                </p>
+
+                <div class="row card__action" style="margin-top: 0; text-align: left">
+                  <div class="col-md-12">
+                    <div class="col-md-3 col-sm-3 heartitem no-padd">
+                      <a href="#">
+                        <i class="material-icons heartline pointer set-pos">favorite_border</i>
+                        <i class="material-icons heartfull set-pos" style="color: red; display: none;">favorite</i>
+                        <span class="set-font-style">(6)</span>
+                      </a>
+                    </div>
+                    <div class="">
+                      <a href="#">
+                        <i class="material-icons" style="font-size: 14px;" >star</i>
+                        <i class="material-icons" style="font-size: 14px;">star</i>
+                        <i class="material-icons" style="font-size: 14px;">star</i>
+                        <i class="material-icons" style="font-size: 14px;">star</i>
+                        <i class="material-icons" style="font-size: 14px;">star</i>
+                        <span style="color: black;font-size: 13px;font-weight: bold;">4.2 (52)</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <p style="color: black;text-align: left;">Small plates, salads & sandwiches in an intimate setting with 12 indoor seats plus patio seating.</p>
+
+
+
+
+              </div>
+            </a>
+
+            <hr style="border: 1px solid #ECECEC;margin-top: -5px;">
+            <div class="row card__action" style="padding-bottom: 18px;">
+              <a href="">
+                <div class="col-md-12 col-xs-12">
+                  <p class="h6 type--uppercase text-left" style="color: black;margin-left: 28px; margin-right: 28px; text-transform:none;">Wähle dein Paket zwischen Bronze, Silber und Gold aus.</p>
+
+                </div>
+              </a>
+            </div>
+
+
+            <div class="row ml-3 mr-3" style="margin-top: 0;">
+
+              <div class="col-md-4 col-xs-4 text-center" style="font-size: 17px">
+                <a href="#">
+                  <img src="img/gold.png" class="shape" alt="Image"  style="width: 50%;">
+                  <p class="avail" style="color: #919191;;margin-top: 13px;font-size: 16px;">100,-€</p>
+                </a>
+
+              </div>
+              <div class="col-md-4 col-xs-4 text-center" style="font-size: 17px">
+                <a href="#">
+                  <img src="img/silber.png" class="shape" alt="Image"  style="width: 50%;">
+                  <p class="avail" style="color: #919191;;margin-top: 13px;font-size: 16px;">150,-€</p>
+                </a>
+
+              </div>
+              <div class="col-md-4 col-xs-4 text-center" style="font-size: 17px">
+                <a href="#">
+                  <img src="img/bronze.png" class="shape" alt="Image"  style="width: 50%;">
+                  <p class="avail" style="color: #919191;;margin-top: 13px;font-size: 16px;">200,-€</p>
+                </a>
+
+              </div>
+
+            </div>
+
+
+
+            <div style="padding-bottom: 30px;padding-top: 30px;">
+              <a href="#">
+                <!--<span class="h6 type&#45;&#45;uppercase" style="color:black;">Buy Now</span>-->
+                <a class="btn btn--primary btn--lg" href="#" style="width: 85%;">
+                  <span class="btn__text">JETZT KAUFEN</span>
+                </a>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 masonry__item">
+          <div class="card card-2 text-center" style="background: white;">
+            <div class="card__top project-thumb">
+              <span class="label"><i class="icon icon--xs  icon-Dropbox" icon-class=" icon-Dropbox" title="icon-Dropbox"></i> Paket</span>
+              <a href="#">
+                <img alt="Image" src="img/landing-14.jpg">
+              </a>
+            </div>
+            <a href="#">
+              <div class="card__body">
+
+                <p style="color: #4a90e2;font-size: 15px;font-weight: 600;text-align: left;margin-top: -20px;">Coffee NewYork
+                </p>
+
+                <div class="row card__action" style="margin-top: 0; text-align: left">
+                  <div class="col-md-12">
+                    <div class="col-md-3 col-sm-3 heartitem no-padd">
+                      <a href="#">
+                        <i class="material-icons heartline pointer set-pos">favorite_border</i>
+                        <i class="material-icons heartfull set-pos" style="color: red; display: none;">favorite</i>
+                        <span class="set-font-style">(6)</span>
+                      </a>
+                    </div>
+                    <div class="">
+                      <a href="#">
+                        <i class="material-icons" style="font-size: 14px;" >star</i>
+                        <i class="material-icons" style="font-size: 14px;">star</i>
+                        <i class="material-icons" style="font-size: 14px;">star</i>
+                        <i class="material-icons" style="font-size: 14px;">star</i>
+                        <i class="material-icons" style="font-size: 14px;">star</i>
+                        <span style="color: black;font-size: 13px;font-weight: bold;">4.2 (52)</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <p style="color: black;text-align: left;">Small plates, salads & sandwiches in an intimate setting with 12 indoor seats plus patio seating.</p>
+
+
+
+
+              </div>
+            </a>
+
+            <hr style="border: 1px solid #ECECEC;margin-top: -5px;">
+            <div class="row card__action" style="padding-bottom: 18px;">
+              <a href="">
+                <div class="col-md-12 col-xs-12">
+                  <p class="h6 type--uppercase text-left" style="color: black;margin-left: 28px; margin-right: 28px; text-transform:none;">Wähle dein Paket zwischen Bronze, Silber und Gold aus.</p>
+
+                </div>
+              </a>
+            </div>
+
+
+            <div class="row ml-3 mr-3" style="margin-top: 0;">
+
+              <div class="col-md-4 col-xs-4 text-center" style="font-size: 17px">
+                <a href="#">
+                  <img src="img/gold.png" class="shape" alt="Image"  style="width: 50%;">
+                  <p class="avail" style="color: #919191;;margin-top: 13px;font-size: 16px;">100,-€</p>
+                </a>
+
+              </div>
+              <div class="col-md-4 col-xs-4 text-center" style="font-size: 17px">
+                <a href="">
+                  <img src="img/silber.png" class="shape" alt="Image"  style="width: 50%;">
+                  <p class="avail" style="color: #919191;;margin-top: 13px;font-size: 16px;">150,-€</p>
+                </a>
+
+              </div>
+              <div class="col-md-4 col-xs-4 text-center" style="font-size: 17px">
+                <a href="">
+                  <img src="img/bronze.png" class="shape" alt="Image"  style="width: 50%;">
+                  <p class="avail" style="color: #919191;;margin-top: 13px;font-size: 16px;">200,-€</p>
+                </a>
+
+              </div>
+
+            </div>
+
+
+
+            <div style="padding-bottom: 30px;padding-top: 30px;">
+              <a href="#">
+                <!--<span class="h6 type&#45;&#45;uppercase" style="color:black;">Buy Now</span>-->
+                <a class="btn btn--primary btn--lg" href="#" style="width: 85%;">
+                  <span class="btn__text">JETZT KAUFEN</span>
+                </a>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+
+  <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+    <i class="stack-interface stack-up-open-big"></i>
+  </a>
+
+</div>

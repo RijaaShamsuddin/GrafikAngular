@@ -1,0 +1,101 @@
+<!--<div class="col-md-6 col-md-offset-3">
+  <h2>Register</h2>
+  <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+      
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
+        <label for="email">Username</label>
+        <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required />
+        <div *ngIf="f.submitted && !email.valid" class="help-block">username is required</div>
+      </div>
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+          <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+      </div>
+      <div class="form-group">
+        <label for="newsletter">Newsletter</label>
+        <input type="checkbox" class="form-control" name="newsletter" [(ngModel)]="model.newsletter" #newsletter="ngModel" />
+        &lt;!&ndash; <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div> &ndash;&gt;
+      </div>
+      <div class="form-group">
+          <button [disabled]="loading" class="btn btn-primary">Register</button>
+          <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+          <a [routerLink]="['/login']" class="btn btn-link">Cancel</a>
+      </div>
+  </form>
+</div>-->
+
+<div class="main-container">
+    <section class="imageblock switchable feature-large height-100">
+        <div class="imageblock__content col-md-6 col-sm-4 pos-right">
+            <div class="background-image-holder">
+                <img alt="image" src="../../assets/img/inner-7.jpg" />
+            </div>
+        </div>
+        <div class="container pos-vertical-center">
+            <div class="row">
+                <div class="col-md-5 col-sm-7">
+                    <div class="modal-instance" style="padding-bottom: 30px;">
+                            <span>
+                                  <img class="logo logo-dark " alt="logo" src="../../assets/img/g-logo-login.png">
+                            </span>
+                    </div>
+                    <div class="row"></div>
+                    <h2 class="text-center">Registrierung</h2>
+                    <a class="btn block btn--icon bg--facebook type--uppercase" href="#">
+                                <span class="btn__text">
+                                    <i class="socicon-facebook"></i>
+                                    Mit Facebook anmelden
+                                </span>
+                    </a>
+                    <a class="btn block btn--icon bg--twitter type--uppercase" href="#">
+                                <span class="btn__text">
+                                    <i class="socicon-twitter"></i>
+                                    Mit Twitter anmelden
+                                </span>
+                    </a>
+                    <hr data-title="OR">
+                    <form>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <input type="email" name="Email Address" placeholder="Benutzername/E-Mail Adresse" />
+                            </div>
+                            <div class="col-xs-12">
+                                <input type="password" name="Password" title="8 oder mehr Zeichen mit einer Mischung aus Buchstaben, Ziffern und Symbolen verwende" placeholder="Passwort" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
+                            </div>
+                            <div class="col-xs-12">
+                                <button type="submit" class="btn btn--primary type--uppercase">Anmelden</button>
+                            </div>
+                            <div class="col-xs-12">
+
+                                <div class="input-checkbox">
+                                    <input id="check-test1" type="checkbox" name="agree">
+                                    <label for="check-test1"></label>
+                                </div>
+                                <span class="werden text-adjust">Ich habe die
+                                    <a href="datenschutzbestimmungen.html"> Datenschutzbestimmungen</a>
+                                    gelesen und akzeptiere sie.*
+                                    </span>
+                            </div>
+                            <div class="col-xs-12">
+                                <form>
+                                    <div class="input-checkbox">
+                                        <input id="check-test2" type="checkbox" name="agree">
+                                        <label for="check-test2"></label>
+                                    </div>
+                                    <span class="werden text-adjust">
+                                        Ich möchte per E-Mail über Neuigkeiten und Aktionen informiert werden
+                                    </span>
+                                </form>
+                            </div>
+
+                        </div>
+                        <!--end row-->
+                    </form>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+</div>

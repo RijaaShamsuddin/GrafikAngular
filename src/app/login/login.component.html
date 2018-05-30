@@ -1,0 +1,114 @@
+<!--<div class="col-md-6 col-md-offset-3">
+  <div class="alert alert-info">
+      Username: test<br />
+      Password: test
+  </div>
+  <h2>Login</h2>
+  <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
+          <label for="email">Username</label>
+          <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required />
+          <div *ngIf="f.submitted && !email.valid" class="help-block">username is required</div>
+      </div>
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+          <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+      </div>
+      <div class="form-group">
+          <button [disabled]="loading" class="btn btn-primary">Login</button>
+          <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+      </div>
+      <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+  </form>
+</div>-->
+
+<!--<p>
+  login works!
+</p>-->
+
+<div class="main-container">
+    <section class="height-100 imagebg text-center" data-overlay="4">
+        <div class="background-image-holder">
+            <img alt="background" src="../../assets/img/inner-6.jpg" />
+        </div>
+        <div class="container pos-vertical-center">
+            <div class="row">
+                <div class="col-sm-7 col-md-5">
+                    <div class="bar__module">
+                        <div class="modal-instance">
+                            <span>
+                                  <img class="logo logo-dark " alt="logo" src="../../assets/img/g-logo-login.png">
+                            </span>
+                        </div>
+                        <div class="modal-instance">
+                           <span>
+                             <h3> &nbsp; Login</h3>
+                           </span>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <a class="btn block btn--icon bg--facebook type--uppercase" href="#">
+                                <span class="btn__text">
+                                    <i class="socicon-facebook"></i>
+                                     Mit Facebook anmelden
+                                </span>
+                    </a>
+                    <a class="btn block btn--icon bg--twitter type--uppercase" href="#">
+                                <span class="btn__text">
+                                    <i class="socicon-twitter"></i>
+                                    Mit Twitter anmelden
+                                </span>
+                    </a>
+                    <hr>
+
+                    <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+                        <div class="row">
+                            <div class="col-sm-12 form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
+                                <input type="text" placeholder="Benutzername" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required />
+                                <div *ngIf="f.submitted && !email.valid" class="help-block">Email is required</div>
+                            </div>
+                            <div class="col-sm-12 form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+                                <input type="password" placeholder="Passwort" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <button [disabled]="loading" class="btn btn--primary type--uppercase" type="submit">Anmelden</button>
+                                <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                            </div>
+                            <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+                        </div>
+                        <!--end of row-->
+                    </form>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="input-checkbox">
+                                    <input id="check-test" type="checkbox" name="agree">
+                                    <label for="check-test"></label>
+                                </div>
+                                <span>
+                                                                                    angemeldet bleiben
+                                                                                </span>
+                            </form>
+                            <span class="type--fine-print block">
+                                                                                <a href="#"></a>
+                                                                            </span>
+                        </div>
+                        <div class="col-md-6">
+                                                                            <span class="type--fine-print block modal-trigger" data-modal-index="0">
+                                                                                <a href="#">Registrierung</a>
+                                                                            </span>
+                            <span class="type--fine-print block">
+                                                                                <a href="recover_account.html">Passwort vergessen?</a>
+                                                                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+</div>
